@@ -16,3 +16,31 @@ var i=0;
 
 function Swab()
 {
+		
+
+	if(decksRemaining > 0)
+	{
+		document.writeln("KEEP SWABBING THE DECK AS"+ "<\t>" +decks[i] +" IS REMAINING");
+		document.writeln("<br/>");
+		decksRemaining--;
+		i++;
+		return "Yes";	
+
+	}
+	else 
+		return "NO";
+	
+}
+var swabTheDecks = Swab();
+var swabTheDecks = Swab();
+var swabTheDecks = Swab();
+var swabTheDecks = Swab();
+var swabTheDecks = Swab();
+
+document.writeln(" ARE DECKS REMAINING TO SWAB:" + swabTheDecks);
+document.writeln("<br/>");
+for (var deckNumber = 0; deckNumber < decks.length; deckNumber++)
+{
+	if (window.console) 
+{
+    console.log("SWAB THE DECK")
