@@ -44,3 +44,19 @@ for (var deckNumber = 0; deckNumber < decks.length; deckNumber++)
 	if (window.console) 
 {
     console.log("SWAB THE DECK")
+    }
+}
+
+function complaint(person,rant)
+{
+ return "Get back to work, " + crewName;
+}
+var complainTo = complaint("Anyone","PLEASE");
+document.writeln("WHENEVER THE CREW COMPLAINTS HE GETS THE REPLY");
+document.writeln("<br/>");
+document.write(complainTo + "!");
+document.writeln("<br/>");
+document.write("SO HE WAS NOT AT ALL FEELING PIRATEY!");
+document.writeln("<br/>");
+document.write("MEANWHILE" + "<\t>" + crewName + " was thinking what would happen if NINJAS ATTACK DURING THE NIGHT");
+
