@@ -31,3 +31,21 @@ var findBreakfast = function(groceryStore, shoppingZombies, food) {
 				groceryStore +
 				" past the zombies and starts the rest of his day.");
 };
+//Procedure
+var zombieGroup = function(numberOfBullets, numberOfZombies) {
+	if (numberOfBullets >= numberOfZombies) {
+		console.log(dudeName +
+					" pulls out his rifle and proceeds to shoot all " +
+					numberOfZombies +
+					" zombies in the head."
+		)
+	} else {
+		console.log(dudename +
+					"carefully avoids the " +
+					numberOfZombies +
+					"zombies."
+		);
+	};
+	return numberOfBullets,
+		numberOfZombies;
+};
