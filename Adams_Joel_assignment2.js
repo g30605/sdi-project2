@@ -1,62 +1,33 @@
+/*
+Author: Joel E. Adams
+Date: 14 August 2013
+SDI Project 2
+*/
 
-var crewName= "Wesley";
-var DaysSailing= 8;
-var decks=["Bridge", "Gun deck", "Main deck", "Quarterdeck" ];
-var decksRemaining = decks.length;
+//Local Variables
+var dudeName = "Ben";
+var weapons = [ "Rifle", "Shotgun", "Shovel" ];
+var rifleBullets = 60,
+	shotgunShells = 45;
+var flaresAndFood = [ "Flare", "Canned Food" ];
 
-document.writeln("CREW MEMBER NAME:" + crewName );
-document.writeln("<br/>");
-
-document.writeln("NUMBER OF DAYS SAILING:" + DaysSailing);
-document.writeln("<br/>");
-
-document.writeln("DECKS REMAINING TO SWAB:" + decksRemaining);
-document.writeln("<br/>");
-var i=0;
-
-function Swab()
-{
-		
-
-	if(decksRemaining > 0)
-	{
-		document.writeln("KEEP SWABBING THE DECK AS"+ "<\t>" +decks[i] +" IS REMAINING");
-		document.writeln("<br/>");
-		decksRemaining--;
-		i++;
-		return "Yes";	
-
-	}
-	else 
-		return "NO";
-	
-}
-var swabTheDecks = Swab();
-var swabTheDecks = Swab();
-var swabTheDecks = Swab();
-var swabTheDecks = Swab();
-var swabTheDecks = Swab();
-
-document.writeln(" ARE DECKS REMAINING TO SWAB:" + swabTheDecks);
-document.writeln("<br/>");
-for (var deckNumber = 0; deckNumber < decks.length; deckNumber++)
-{
-	if (window.console) 
-{
-    console.log("SWAB THE DECK")
-    }
-}
-
-function complaint(person,rant)
-{
- return "Get back to work, " + crewName;
-}
-var complainTo = complaint("Anyone","PLEASE");
-document.writeln("WHENEVER THE CREW COMPLAINTS HE GETS THE REPLY");
-document.writeln("<br/>");
-document.write(complainTo + "!");
-document.writeln("<br/>");
-document.write("SO HE WAS NOT AT ALL FEELING PIRATEY!");
-document.writeln("<br/>");
-document.write("MEANWHILE" + "<\t>" + crewName + " was thinking what would happen if NINJAS ATTACK DURING THE NIGHT");
-
+//Functions
+var findBreakfast = function(groceryStore, shoppingZombies, food) {
+	console.log(dudeName +
+				" sneaks past " +
+				shoppingZombies +
+				" zombies to get into " +
+				groceryStore +
+				" to search for some breakfast.");
+	if (food > 0) {
+		console.log(dudeName +
+					" finds himself some beans and devours them")
+	} else {
+		console.log(dudeName +
+					" finds no food.")
+	};
+	console.log(dudeName +
+				" sneaks back out of " +
+				groceryStore +
+				" past the zombies and starts the rest of his day.");
+};
